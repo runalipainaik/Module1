@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+h1{
+    text-align: center;
+}
+
+.Box > #Chicken { 
+    text-align: right;
+    background-color: pink ;
+    padding:0;
+    margin-top: 0;
+    margin-right: 0;
+    padding:0.5% 15% 0.5% 15% ;
+    float: right;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+    font-style: sans-serif;
+}
+
+.Box > #Beef {
+    text-align: right;
+    background-color: red;
+    padding-top: 0px;
+    margin-top: 0;
+    padding:0.5% 15% 0.5% 15%;
+    float: right;
+    color:rgb(255,255,255);
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+    font-style: sans-serif;
+
+}
+.Box > #Sushi {
+    text-align: right;
+    background-color: yellow ;
+    padding-right: 0px;
+    margin-top: 0;
+    margin-right: 0;
+    padding:0.5% 15% 0.5% 15% ;
+    float: right;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+    font-style: sans-serif;
+
+}
+
+p{
+    padding: 10px;
+    clear:right;
+}
+
+
+.Container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;;
+  
+}
+.Box{
+    flex:1 1 10rem;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin: auto 25px;
+    background-color: grey;
+    border:black solid 1px ;
+    width:33.33%;
+    height:40%;
+    }
+
+
+    /* Media Query */
+
+    
+    /* Media Query using width and height  */
+    
+    @media(min-width:768px) and (max-width:991px)
+    {   .Box{
+        margin-bottom:50px;
+    }
+        #Col3{
+        flex: 1 100%;
+    }
+    
+        .Container{
+            flex-wrap:wrap;
+        }
+    }
+
+
+    @media(max-width:767px)
+    {
+        .Box{
+            width:40%;
+            margin: 10px auto;
+        }
+
+        .Container{
+            display:block;
+        }
+    }
+     
+
+
+    
+         
+
+
+    
+
+
+    
